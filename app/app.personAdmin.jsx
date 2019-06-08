@@ -55,7 +55,6 @@ export class PersonComponent extends React.Component {
         HTTP.put("/api/person/"+person.id,person).then(person => HTTP.get("/api/person").then(persons => this.setState({ person, persons })));
         else
         HTTP.post("/api/person",person).then(person => HTTP.get("/api/person").then(persons => this.setState({ person, persons })));
-        console.log(person);
     }
 
     render() {  

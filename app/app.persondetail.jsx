@@ -8,7 +8,7 @@ export class PersonDetail extends React.Component{
 
     componentDidMount(){
         let personId=this.props.match.params.id;
-        HTTP.get("/api/person/"+personId,'P').then (person =>  this.setState({person}) );
+        HTTP.get("/api/person/"+personId,'P').then (person =>  this.setState({person}));
     }
 
 

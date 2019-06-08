@@ -8,12 +8,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link href="libs/bootstrap/css/bootstrap.css" rel="stylesheet">
   <link href="/styles/App.css" rel="stylesheet">
+  <link href="/styles/style.css" rel="stylesheet">
 	<script src="app/app.bundle.js"></script>
 </head>
 <body>
     <div class="container">
 		<div id="appcontent">Loading...</div>
     </div>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyCYTXNyE2rYf3O-U9jn5NgtO5qkBVlZ3LE",
+        authDomain: "forethink-7.firebaseapp.com",
+        databaseURL: "https://forethink-7.firebaseio.com",
+        projectId: "forethink-7",
+        storageBucket: "forethink-7.appspot.com",
+        messagingSenderId: "281940910047",
+        appId: "1:281940910047:web:4fd2f88b0ecaab6a"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
 </body>
 </html>
 
