@@ -13,7 +13,7 @@ export class Hub extends Component {
     
     
     render() {
-        let arows=this.state.person.map(a => <Person person={a} />)
+        let arows=this.state.person.map(a => <Person key={a.id} person={a} />)
         return (
           <div className="main">
          {arows} 

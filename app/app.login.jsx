@@ -62,7 +62,7 @@ export class Login extends React.Component{
       </div>
     
       <div id="user_div" className="loggedin-div">
-        <h3>Welcome User</h3>
+        <h3>Welcome Admin</h3>
         <p id="user_para">Welcome to Firebase web login Example. You're currently logged in.</p>
         <p ><Link to="/Admin" >Go to Admin Page</Link></p>
         <button onClick={e => this.logout()}>Logout</button>

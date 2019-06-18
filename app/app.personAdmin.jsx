@@ -5,8 +5,9 @@ import { HTTP } from './http';
 
 export const TextInput = ({ id, label, value, onChange }) => <div className="form-group">
     <label htmlFor={id}>{label}</label>
-    <input className="form-control" id={id} type="text" value={value} onChange={onChange} />
+    <input className="form-control" id={id} type="text" value={String(value)} onChange={onChange} />
 </div>
+
 
 export function ObjectList({ id, items, display, value, onChange }) {
     let options = items.map(item => <option value={item.id} key={item.id}>{item[display]}</option>)
@@ -74,7 +75,7 @@ export class PersonComponent extends React.Component {
                     <TextInput id="image" label="Image" value={person.image} onChange={ev => this.personChange(ev)} /> 
                     <TextInput id="email" label="Email" value={person.email} onChange={ev => this.personChange(ev)} />
                     <TextInput id="company_id" label="Company Id" value={person.company_id} onChange={ev => this.personChange(ev)}/>
-                </div>
+            </div>
             </div>
             <div className="row">
             <div className="col-md-3"> </div>

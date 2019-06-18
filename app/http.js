@@ -20,10 +20,4 @@ export const HTTP={
     post: (url,data) => makeTheCall(url,'post',data),
     delete: (url) => makeTheCall(url,'delete')
 };
-/* service firebase.storage {
-  match /b/{bucket}/o {
-    match /{allPaths=**} {
-      allow read, write: if request.auth != null;
-    }
-  }
-}*/
+
